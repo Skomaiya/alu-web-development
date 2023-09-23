@@ -28,7 +28,7 @@ header{
     font-weight: bold;
 }
 body{
-    background-image: url('background.png');
+    background-image: url('./background.png');
     background-repeat: no-repeat;
     background-size: 110%;
     margin: 0px;
