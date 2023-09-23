@@ -1,0 +1,282 @@
+header{
+    width: 1100px;
+    height: 30px;
+    margin-top: 35px;
+    margin-left: 172px;
+}
+.link {
+    flex: 1;
+    text-align: right;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.home {
+    display: flex;
+    text-align: right;
+    cursor: pointer;
+    margin-bottom: 50px;
+
+}
+.underlink {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+body{
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: 110%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.h2 {
+   
+    align-items: center;
+    text-align: center;
+}
+.h1 {
+    
+    font-size: 120px;
+    margin-bottom: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+
+}   
+.overview {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.t1 {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    padding-top: 150px;
+    
+}
+.sp1 {
+    color: #C271FF;
+}
+.smile {
+    padding-left: 500px;
+    text-align: center;
+    padding-top: 0px;
+    font-size: 16px;
+    color: white;
+    font-family: sans-serif;
+}
+.grin {
+    padding-left: 100px;
+    text-align: center;
+    padding-top: 0px;
+    font-size: 16px;
+    color: white;
+    font-family: sans-serif;
+}
+.laugh {
+    padding-left: 100px;
+    text-align: center;
+    padding-top: 0px;
+    font-size: 16px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.button1{
+    box-shadow: 0px 2px 20px 0px #00000080;
+    width: 162px;
+    height: 44px;
+    top: 419px;
+    left: 639px;
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    align-items: center;
+    background: #C271FF;
+    border-radius: 22px;
+    color: white;
+}
+
+.avatars{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.quote{
+    margin-top: 50px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #C271FF;
+    width: 100%;
+    height: 350px;
+    box-sizing: border-box;
+}
+
+.testimonials{
+    font-family: Source Sans Pro;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.person{
+    margin-left: 30px;
+}
+.title1 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 32px;
+    line-height: 40px;
+}
+.pop {
+    color: #C271FF;
+}
+.video {
+    display: flex;
+    justify-content: space-evenly;
+}
+.tutorials {
+    width: 255px;
+    height: 335px;
+}
+.author {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
+    height: 30px;
+}
+.star {
+    display: flex;
+    flex-direction: row;
+    height: 15px;
+    margin-top: 10px;
+    
+}
+#name {
+    margin-top: 4px;
+    margin-left: 8px;
+}
+.time {
+    margin-top: 0px;
+    margin-left: 90px;
+    color: #C271FF;
+}
+.ex1 {
+    color: #07162980;
+    ;
+}
+
+.member{
+    margin-top: 70px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    background-color: #071629;
+}
+.l1{
+    text-align: center;
+    font-family: sans-serif;
+}
+.l2{
+    color: #C271FF;
+}
+.membership{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-left: 0px;
+    margin-top: 50px;
+    text-align: center;
+    padding: auto;
+    font-family: sans-serif;
+}
+
+.button2{
+    box-shadow: 0px 2px 20px 0px #00000080;
+    width: 162px;
+    height: 44px;
+    top: 419px;
+    left: 639px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    align-items: center;
+    background: #C271FF;
+    border-radius: 22px;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-self:right;
+}
+.l3 {
+    display: flex;
+}
+
+.FAQ {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 75px;
+    font-family:'Courier New', Courier, monospace ;
+}
+.FAQ1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+    
+    
+    
+}
+.FAQ2 {
+    width: 350px;
+}
+
+
+.footer{
+    background-color: #071629;
+    margin-top: 30px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.pic{
+    padding-left: 100px;
+}
+.socials{
+    float: right;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    width: 130px;
+    height: 30px;
+}
+.text{
+    text-align: center;
+    opacity: 0.35;
+}
