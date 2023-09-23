@@ -17,4 +17,4 @@ Purpose
 
 The purpose of this project is to demonstrate how the fundamental structure of an HTML file can be made more appealing with any additional styles.
 
-<a href="./css.png"></a>
+<a href="./css.png">CSS</a>
