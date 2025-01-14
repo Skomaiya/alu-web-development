@@ -34,6 +34,5 @@ class BasicCache(BaseCaching):
 
         Returns:
             str: The value associated with the key, or None if the key is invalid
-            or doesn't exist in the cache.
         """
         return self.cache_data.get(key)
