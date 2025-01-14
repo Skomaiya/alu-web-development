@@ -33,6 +33,6 @@ class BasicCache(BaseCaching):
             key (str): The key of the item to retrieve.
 
         Returns:
-            str: The value associated with the key, or None if the key is invalid
+            str: The associated key value, or None if the key is invalid
         """
         return self.cache_data.get(key)
