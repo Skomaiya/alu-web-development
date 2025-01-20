@@ -15,13 +15,12 @@ class Auth:
         """
         if path is None or excluded_paths is None or excluded_paths == []:
             return True
-        if "/api/v1/status/" in excluded_paths:
-            return False
         if path in excluded_paths:
             return False
-        else:
+        elif path not in excluded_paths:
             return True
-        
+        if "/api/v1/status/" in excluded_paths:
+            return False
 
     def authorization_header(self, request=None) -> str:
         """ Method that should return None - request or the value of the header
