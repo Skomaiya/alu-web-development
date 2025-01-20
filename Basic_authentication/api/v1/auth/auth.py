@@ -19,7 +19,10 @@ class Auth:
             return False
         elif path not in excluded_paths:
             return True
-        if "/api/v1/status/" in excluded_paths:
+        path = path.rstrip('/')
+        normalized_excluded = [p.rstrip('/') for p in excluded_paths]
+
+        if path in normalized_excluded:
             return False
 
     def authorization_header(self, request=None) -> str:
