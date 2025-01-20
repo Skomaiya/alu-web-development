@@ -20,8 +20,6 @@ def stats() -> str:
     Return:
       - the number of each objects
     """
-
-
     from models.user import User
     stats = {}
     stats['users'] = User.count()
