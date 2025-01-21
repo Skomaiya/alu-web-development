@@ -20,7 +20,7 @@ if AUTH_TYPE == "auth":
 
 elif AUTH_TYPE == "basic_auth":
     from api.v1.auth.auth import BasicAuth
-    auth = BasicAuth()
+    auth = BasicAuth(Auth())
 
 
 @app.errorhandler(404)
