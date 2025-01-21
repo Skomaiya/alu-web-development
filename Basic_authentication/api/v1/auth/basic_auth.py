@@ -75,12 +75,10 @@ class BasicAuth(Auth):
         return email, password
 
     def user_object_from_credentials(
-            self,
-            user_email: str,
-            user_pwd: str
+        self, user_email: str, user_pwd: str
     ) -> TypeVar('User'):
         """
-        User object from credentials
+        Returns the User instance based on his email and password.
         """
         if user_email is None or type(user_email) is not str:
             return None
@@ -97,3 +95,23 @@ class BasicAuth(Auth):
             if user.is_valid_password(user_pwd):
                 return user
         return None
+
+    def current_user(self, request=None) -> TypeVar('User'):
+        """current user"""
+        header = self.authorization_header(request)
+        if header is None:
+            return None
+        b64 = self.extract_base64_authorization_header(header)
+        if b64 is None:
+            return None
+        decoded = self.decode_base64_authorization_header(
+            b64)
+        if decoded is None:
+            return None
+        user_info = self.extract_user_credentials(
+            decoded)
+        if user_info is None:
+            return None
+        email, pwd = user_info
+        user = self.user_object_from_credentials(email, pwd)
+        return user
