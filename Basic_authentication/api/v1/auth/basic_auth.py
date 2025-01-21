@@ -4,7 +4,7 @@ Module for the Authentication.
 """
 from typing import List, TypeVar
 from api.v1.auth.auth import Auth
-
+import base64
 
 class BasicAuth(Auth):
     """Class for managing Basic API authentication."""
@@ -44,6 +44,7 @@ class BasicAuth(Auth):
         if not isinstance(base64_authorization_header, str):
             return None
         try:
-            return base64_authorization_header.encode('utf-8').decode('base64')
+            if not base64_authorization_header:
+                return None
         except Exception:
-            return None
+            return base64_authorization_header.decode('utf-8')
