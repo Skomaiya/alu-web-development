@@ -51,3 +51,7 @@ class Auth:
         Currently returns None.
         """
         return None
+
+
+class BasicAuth(Auth):
+    pass
