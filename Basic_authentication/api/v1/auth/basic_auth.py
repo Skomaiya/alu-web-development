@@ -79,19 +79,25 @@ class BasicAuth(Auth):
     ) -> TypeVar('User'):
         """
         Returns the User instance based on his email and password.
+
+        Args:
+            user_email (str): The user's email.
+            user_pwd (str): The user's password.
+
+        Returns:
+            User: The User instance if found and valid, or None otherwise.
         """
-        if user_email is None or type(user_email) is not str:
+        if user_email is None or not isinstance(user_email, str):
             return None
-        if user_pwd is None or type(user_pwd) is not str:
+        if user_pwd is None or not isinstance(user_pwd, str):
             return None
 
         users = User.search({'email': user_email})
+        if not users:  # If no users are found, return None
+            return None
 
-        if not users:
-            return None
-        if users is None or len(users) == 0:
-            return None
         for user in users:
             if user.is_valid_password(user_pwd):
                 return user
+
         return None
