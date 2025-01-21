@@ -6,6 +6,7 @@ from typing import List, TypeVar
 from api.v1.auth.auth import Auth
 import base64
 
+
 class BasicAuth(Auth):
     """Class for managing Basic API authentication."""
 
@@ -28,8 +29,10 @@ class BasicAuth(Auth):
         if not authorization_header.startswith("Basic "):
             return None
         return authorization_header[6:]
-    
-    def decode_base64_authorization_header(self, base64_authorization_header: str) -> str:
+
+    def decode_base64_authorization_header(
+        self, base64_authorization_header: str
+    ) -> str:
         """
         Decodes a base64 string.
 
