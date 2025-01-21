@@ -47,12 +47,12 @@ def before_request() -> None:
     """
     if auth is None:
         return
-    if auth.require_auth(request.path, ['/api/v1/status/', '/api/v1/unauthorized/', 
-        '/api/v1/forbidden/']):
+    if auth.require_auth(request.path, ['/api/v1/status/', 
+    '/api/v1/unauthorized/', '/api/v1/forbidden/']):
         return
-    if auth.authorization_header(request) == None:
+    if auth.authorization_header(request) is None:
         abort(401)
-    if auth.current_user(request) == None:
+    if auth.current_user(request) is None:
         abort(403)
 
 
