@@ -9,4 +9,7 @@ from models.user import User
 
 
 class SessionAuth(Auth):
+    """
+    Class for managing Session API authentication.
+    """
     pass
