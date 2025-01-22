@@ -21,6 +21,10 @@ if AUTH_TYPE == "basic_auth":
     from api.v1.auth.basic_auth import BasicAuth
     auth = BasicAuth()
 
+if AUTH_TYPE == "session_auth":
+    from api.v1.auth.session_auth import SessionAuth
+    auth = SessionAuth()
+
 
 @app.errorhandler(404)
 def not_found(error) -> str:
@@ -91,7 +95,7 @@ def before_request() -> None:
         abort(403)
     
     request.current_user = auth.current_user(request)
-    
+
 
 
 if __name__ == "__main__":
